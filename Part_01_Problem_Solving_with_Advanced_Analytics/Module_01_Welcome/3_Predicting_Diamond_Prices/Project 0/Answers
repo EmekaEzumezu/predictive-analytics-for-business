@@ -1,0 +1,21 @@
+According to the linear model provided, if a diamond is 1 carat heavier than another with the same cut and clarity, how much more would the retail price of the heavier diamond be? Why?
+
+$8,413
+
+Because that is the 1 carat unit cost of diamond with equivalant features.
+
+
+2. If you were interested in a 1.5 carat diamond with a Very Good cut (represented by a 3 in the model) and a VS2 clarity rating (represented by a 5 in the model), what retail price would the model predict for the diamond?
+
+$10,094.8
+
+
+What strikes you about this comparison? After seeing this plot, do you feel confident in the model’s ability to predict prices?
+
+- The predicted prices lays close to the line model without much data sparcely distributed around it.
+- There is room for improvment on the model, though the prediction was fairly close. The model also predicted negative price value for carats that are below, about, 0.4. Which the dataset prices didn't such value for diamonds of the same carats.
+
+
+The Recommendation: What bid do you recommend for the jewelry company? Please explain how you arrived at that number.
+
+The recommended bid price is $7,985,214. That is the 70% of the retail price of all the diamond up for bidding.
