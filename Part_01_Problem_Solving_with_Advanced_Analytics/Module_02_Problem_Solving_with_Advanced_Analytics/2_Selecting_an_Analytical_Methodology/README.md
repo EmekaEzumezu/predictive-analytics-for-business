@@ -76,7 +76,7 @@ Numeric outcomes are those where the outcome is simply a number. Predicting the 
 Non-numeric outcomes are those where we’re trying to predict the category into which a case (e.g. customer) falls, such as whether a customer will pay on-time, pay late, or default on a payment. Another example is the whether an electronic device will fail before 1000 hours or not. Models predicting non-numeric data are called classification models.
 
 
-**Numeric Variables**
+**Numeric Variables (Regression Models)**
 
 **Target Variables**
 
@@ -96,7 +96,7 @@ A time-based numeric variable is one where you are trying to predict what will h
 Count variables are numbers that are discrete, positive integers. They’re called count numbers because they’re used to analyze variables that you can count. As modeling these type of variables is not common in business, we won’t be covering this topic in this course.
 
 
-**Non-Numeric Variables**
+**Non-Numeric Variables (Classification Models)**
 
 A non-numeric variable is often called categorical, because the values of the variable take on a discrete number of possible values or categories. Examples include whether an electronic device will fail before 1000 hours or not; whether a customer will pay on-time, pay late, or default on a payment, or whether a store is classified as large, medium or small.
 
