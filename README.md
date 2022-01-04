@@ -10,5 +10,5 @@
 
 ##### The Analytical Problem Solving Framework
 
-* [The Analytical Problem Solving Framework summary](https://github.com/EmekaEzumezu/predictive-analytics-for-business/tree/main/Part_01_Problem_Solving_with_Advanced_Analytics/Module_02_Problem_Solving_with_Advanced_Analytics/1_The_Analytical_Problem_Solving_Framework)
+* [The Analytical Problem Solving Framework (CRISP-DM) summary](https://github.com/EmekaEzumezu/predictive-analytics-for-business/tree/main/Part_01_Problem_Solving_with_Advanced_Analytics/Module_02_Problem_Solving_with_Advanced_Analytics/1_The_Analytical_Problem_Solving_Framework)
 
