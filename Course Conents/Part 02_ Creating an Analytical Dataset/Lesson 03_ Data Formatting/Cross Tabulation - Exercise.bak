@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="2" SearchSubDirs="False" RecordLimit="">C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf</File>
+          <FormatSpecificOptions>
+            <AllStrings>False</AllStrings>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>wyoming-schools.dbf</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NCESSchool" size="12" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolName" size="30" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="V_String" />
+            <Field name="StreetAddr" size="30" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="V_String" />
+            <Field name="City" size="18" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="State" size="2" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="ZipCode" size="5" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="Zip_4" size="4" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="Enrollment" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="Double" />
+            <Field name="Telephone" size="10" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="Locale" size="1" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="LocaleDesc" size="12" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="MSA_Cat" size="10" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolType" size="1" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="TypeDesc" size="16" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolLeve" size="1" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="LevelDesc" size="10" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="LowestGrad" size="2" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+            <Field name="HighestGra" size="2" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 03_ Data Formatting\data\wyoming-schools.dbf" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="138" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Cross Tabulation - Exercise</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="70e98ba0-478a-4f5c-8b46-f4729f54588e" />
+      <Telemetry>
+        <PreviousWorkflowId value="78044120-9731-455b-9d96-aee3154cdce7" />
+        <OriginWorkflowId value="78044120-9731-455b-9d96-aee3154cdce7" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>diamonds.xlsx
+Query=`diamonds$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="F1" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="Double" />
+            <Field name="carat" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="Double" />
+            <Field name="cut" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="V_String" />
+            <Field name="cut_ord" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="Double" />
+            <Field name="color" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="V_String" />
+            <Field name="clarity" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="V_String" />
+            <Field name="clarity_ord" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="Double" />
+            <Field name="price" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\diamonds.xlsx|||`diamonds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="Linear_Regression">
+        <Position x="234" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="standardize_pred">True</Value>
+          <Value name="internal_cv">True</Value>
+          <Value name="display_graphs">True</Value>
+          <Value name="set_seed_internal_cv">True</Value>
+          <Value name="set_seed_external_cv">True</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Predicting_Diamond_Prices</Value>
+          <Value name="Y Var">price</Value>
+          <Value name="X Vars">carat,cut,clarity</Value>
+          <Value name="Omit Constant">False</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Predicting_Diamond_Prices</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Emeka\AppData\Local\Temp\Engine_2400_42ca761e678e4da8853a61d8bb853c29_\Engine_12484_9d5dc61df6e84646a977113d3447abdb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>new-diamonds.xlsx
+Query=`new-diamonds$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="F1" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="carat" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="cut" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="V_String" />
+            <Field name="cut_ord" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="color" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="V_String" />
+            <Field name="clarity" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="V_String" />
+            <Field name="clarity_ord" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="price" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="carat + 1 (price)" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="increase" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+            <Field name="F11" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="V_String" />
+            <Field name="F12" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="V_String" />
+            <Field name="F13" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\Module 02_ Problem Solving with Advanced Analytics\Lesson 04_ Practice Project\new-diamonds.xlsx|||`new-diamonds$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="Score">
+        <Position x="378" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">pre_price</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Emeka\AppData\Local\Temp\Engine_2400_42ca761e678e4da8853a61d8bb853c29_\Engine_12484_65fde57725ac43dcb7bd56fd7189e0e7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="F1" selected="True" />
+            <SelectField field="carat" selected="True" />
+            <SelectField field="cut" selected="True" />
+            <SelectField field="color" selected="True" />
+            <SelectField field="clarity" selected="True" />
+            <SelectField field="price" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="F1" selected="True" />
+            <SelectField field="carat" selected="True" />
+            <SelectField field="cut" selected="True" />
+            <SelectField field="color" selected="True" />
+            <SelectField field="clarity" selected="True" />
+            <SelectField field="price" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_pre_price] * 0.7" field="recomend_price" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[recomend_price = [Sum_pre_price] * 0.7
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Emeka\AppData\Local\Temp\Engine_2400_42ca761e678e4da8853a61d8bb853c29_\Engine_12484_76cff0d5e0fe468386eb5147194060da_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="474" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="pre_price" action="Sum" rename="Sum_pre_price" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings>
+        <Position x="474" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">price</Value>
+          <Value name="y var">pre_price</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">cut</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Reports" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="13" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Scater Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>practice-project-solution-workflow (practice)</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5093cf83-53e4-4adb-b1d7-bfb6e88eb315" />
+      <Telemetry>
+        <PreviousWorkflowId value="9724c51e-1e3e-4c1f-819c-6dcf86739965" />
+        <OriginWorkflowId value="9724c51e-1e3e-4c1f-819c-6dcf86739965" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

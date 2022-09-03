@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 02_ Data Issues\Datasets\missingdata.xlsx|||`Original$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>missingdata.xlsx
+Query=`Original$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Respondent ID" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 02_ Data Issues\Datasets\missingdata.xlsx|||`Original$`" type="Double" />
+            <Field name="Age" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 02_ Data Issues\Datasets\missingdata.xlsx|||`Original$`" type="V_String" />
+            <Field name="Income" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 02_ Data Issues\Datasets\missingdata.xlsx|||`Original$`" type="V_String" />
+            <Field name="Education" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 02_ Data Issues\Datasets\missingdata.xlsx|||`Original$`" type="V_String" />
+            <Field name="Homeowner" size="255" source="File: C:\Udacity ND\(Data) Predictive Analytics for Business Nanodegree\GitHub\Course Conents\Part 02_ Creating an Analytical Dataset\Lesson 02_ Data Issues\Datasets\missingdata.xlsx|||`Original$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="222" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([Age]) and !IsNull([Income]) and !IsNull([Education]) and !IsNull([Homeowner])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Age]) and !IsNull([Income]) and !IsNull([Education]) and !IsNull([Homeo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="126" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Respondent ID" selected="True" />
+            <SelectField field="Age" selected="True" type="Double" size="8" />
+            <SelectField field="Income" selected="True" type="Double" size="8" />
+            <SelectField field="Education" selected="True" />
+            <SelectField field="Homeowner" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dealing with Missing Data - Deletion Exercise</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3d45bbbe-53f2-4ef7-a26e-bca6eb2376e8" />
+      <Telemetry>
+        <PreviousWorkflowId value="bd54b9ad-bd7f-4e2b-87f8-bc79d846ad02" />
+        <OriginWorkflowId value="bd54b9ad-bd7f-4e2b-87f8-bc79d846ad02" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
